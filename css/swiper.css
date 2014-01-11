@@ -1,0 +1,16 @@
+.custom-swiper li {
+   list-style: none;
+}
+
+.custom-swiper ul {
+   border: medium solid black;
+   height: 200px;
+}
+
+.custom-swiper > div {
+   text-align: center;
+}
+
+.custom-swiper-selected {
+   color: red;
+}
