@@ -16,9 +16,16 @@ $.widget("custom.swiper", {
         this.options.max = slides.length - 1;
 
         // setup the initial state
+        var h = 0;
         slides.each(function(index, el) {
+            if ($(el).height() > h) {
+                h = $(el).height();
+            }
             $(el).hide();
         });
+        if (h > 0) {
+            $(this.element).height(h);
+        }
         for (var i = 0; i < slides.length; i++) {
             this.currentContainer.append("<span> o </span>");
         };

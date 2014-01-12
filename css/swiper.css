@@ -1,10 +1,14 @@
 .custom-swiper li {
    list-style: none;
+   position: absolute;
+   width: 100%;
 }
 
 .custom-swiper ul {
    border: medium solid black;
    height: 200px;
+   padding: 2px;
+   margin: 0px;
 }
 
 .custom-swiper > div {
